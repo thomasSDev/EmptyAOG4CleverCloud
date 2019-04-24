@@ -10,6 +10,8 @@ import {
   byeIntent
 } from './default/base.intent';
 
+const express = require('express');
+const bodyParser = require('body-parser');
 
 // Create an app instance
 const app = dialogflow()
@@ -27,4 +29,4 @@ app.intent('Default Fallback Intent', (conv: DialogflowConversation) => {
   conv.ask(`I didn't understand. Can you tell me something else?`)
 })
 
-exports.fulfillment = app;
+express().use(bodyParser.json(), app).listen(8080);

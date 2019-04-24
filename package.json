@@ -6,7 +6,7 @@
   "author": "freelance@stephanecastrec.fr",
   "scripts": {
     "install": "tsc",
-    "start": "node index.js",
+    "start": "node build/src/index.js",
     "clean": "rm -rf ./.build",
     "build": "tsc",
     "test": "mocha -r ts-node/register test/**/**/*.test.ts",
@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "actions-on-google": "^2.0.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5"
   },
