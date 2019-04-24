@@ -25,8 +25,5 @@ app.intent('Goodbye', byeIntent)
 
 app.intent('Help', helpIntent)
 
-app.intent('Default Fallback Intent', (conv: DialogflowConversation) => {
-  conv.ask(`I didn't understand. Can you tell me something else?`)
-})
 
 express().use(bodyParser.json(), app).listen(8080);
