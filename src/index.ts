@@ -16,7 +16,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 // Create an app instance
-const app = dialogflow()
+const app = dialogflow({debug:true})
 
 // Register handlers for Dialogflow intents
 
