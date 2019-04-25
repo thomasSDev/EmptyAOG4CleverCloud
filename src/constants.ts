@@ -1,6 +1,6 @@
 
 export const messages = {
-    welcome: "Bonjour, et bienvenue dans votre bot AOG. Comment puis je vous aider?",
-    goodbye: "A bientôt!",
-    help: "Je peux faire XXX pour vous!",
+    welcome: "Bonjour, vous recherchez un bagarre entre supporters. Voulez-vous que je vous suggère des idées de provocation ?",
+    goodbye: "Bonne bagarre !",
+    help: "Je peux faire beaucoup pour vous!",
 }
