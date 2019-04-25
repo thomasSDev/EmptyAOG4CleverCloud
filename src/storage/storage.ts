@@ -8,4 +8,5 @@ export const saveDate = (conv: DialogflowConversation, date: String): void => {
 
 export const getDate = (conv: DialogflowConversation, date: String): String => {
     return conv.data['date'];
+    
 }
