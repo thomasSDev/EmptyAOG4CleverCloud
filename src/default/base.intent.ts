@@ -21,4 +21,5 @@ export const ouiIdeeProvocationIntent = (conv: DialogflowConversation) => {
 }
 export const nonIdeeProvocationIntent = (conv: DialogflowConversation) => {
     conv.ask(messages.reponseNonIdeeProvocation);
+    console.log("NON -- ", conv);
 }
