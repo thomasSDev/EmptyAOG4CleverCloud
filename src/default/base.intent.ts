@@ -15,9 +15,9 @@ export const byeIntent = (conv: DialogflowConversation) => {
     conv.ask(messages.goodbye);    
 }
 
-export const ouiIntent = (conv: DialogflowConversation) => {
+export const ouiIdeeProvocationIntent = (conv: DialogflowConversation) => {
     conv.ask(messages.reponseOuiIdeeProvocation);
 }
-export const nonIntent = (conv: DialogflowConversation) => {
+export const nonIdeeProvocationIntent = (conv: DialogflowConversation) => {
     conv.ask(messages.reponseNonIdeeProvocation);
 }
