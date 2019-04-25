@@ -29,7 +29,7 @@ app.intent('Help', helpIntent)
 
 app.intent('ouiIdeeProvocationIntent', ouiIdeeProvocationIntent)
 
-app.intent('Non', nonIdeeProvocationIntent)
+app.intent('NonIdeeProvocationIntent', nonIdeeProvocationIntent)
 
 
 express().use(bodyParser.json(), app).listen(8080);
