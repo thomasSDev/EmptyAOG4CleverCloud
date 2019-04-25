@@ -14,3 +14,10 @@ export const welcomeIntent = (conv: DialogflowConversation) => {
 export const byeIntent = (conv: DialogflowConversation) => {
     conv.ask(messages.goodbye);    
 }
+
+export const ouiIntent = (conv: DialogflowConversation) => {
+    conv.ask(messages.reponseOuiIdeeProvocation);
+}
+export const nonIntent = (conv: DialogflowConversation) => {
+    conv.ask(messages.reponseNonIdeeProvocation);
+}

@@ -7,7 +7,9 @@ import {
 import { 
   helpIntent,
   welcomeIntent,
-  byeIntent
+  byeIntent,
+  nonIntent,
+  ouiIntent
 } from './default/base.intent';
 
 const express = require('express');
@@ -24,6 +26,10 @@ app.intent('Default Welcome Intent', welcomeIntent)
 app.intent('Goodbye', byeIntent)
 
 app.intent('Help', helpIntent)
+
+app.intent('Oui', ouiIntent)
+
+app.intent('Non', nonIntent)
 
 
 express().use(bodyParser.json(), app).listen(8080);
